@@ -1,6 +1,6 @@
 {
-  "name": "RGB(a) to HEX",
-  "description": "Converts RGB(a) to HEX",
+  "name": "RGB to HEX",
+  "description": "Converts RGB to HEX",
 
   "icons": {
     "16": "icon.png"
