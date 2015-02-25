@@ -57,7 +57,7 @@ $(document).ready(function() {
         
         var hexColor = "#" + rgbOne + rgbTwo + rgbThree;
 
-      
+        $("#hexValue").html(hexColor);
         $("#hexValue").css("color", hexColor);
     });
 });
