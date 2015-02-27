@@ -7,11 +7,11 @@ $(document).ready(function() {
             (e.keyCode === 65 && (e.metaKey || e.ctrlKey) === true) ||  // Keycode for Command/Ctrl + A
             (e.keyCode >= 35 && e.keyCode <= 39))                       // Allow: home, end, left, right
         {
-            // let it happen, don't do anything
+           
             return;
         }
 
-        // Ensure that it is a number and stop the keypress
+    
         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
             e.preventDefault();
         }
@@ -19,13 +19,13 @@ $(document).ready(function() {
 
     numericField.keyup(function()
     {
-        // If the value is greater than 255, then it's not a valid hex value so set it to 255
+    
         if ($(this).val() > 255)
         {
             $(this).val(255);
         }
 
-        // Once we reach the max length, move to the next input box
+        
         if (parseInt($(this).val().length, 10) === parseInt($(this).attr('maxlength'), 10))
         {
             $(this).next(':input').focus();
